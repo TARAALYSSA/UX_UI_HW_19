@@ -40,7 +40,7 @@ body {
 */
 #header {
   height: 350px;
-  background-image: url("/images/background-1.png");
+  background-image: url("./images/background-1.png");
   background-repeat: no-repeat;
 }
 .top {
@@ -237,7 +237,7 @@ span {
 */
 
 .footer {
-  background-image: url(/images/background-image-1.png);
+  background-image: url(./images/background-image-1.png);
   background-repeat: no-repeat;
 }
 .footer .top {
@@ -277,6 +277,4 @@ span {
   color: #8e5315;
   padding: 60px;
   padding-left: 50px;
-}
-@media screen (max-width: 600px) {
 }
