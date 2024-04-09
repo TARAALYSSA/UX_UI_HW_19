@@ -2,7 +2,7 @@ body {
   width: 100%;
 }
 
-.nav-container {
+/*.nav-container {
   background-image: url("https://i.postimg.cc/wB8PSTdW/Header-Background-bigger.png");
   background-repeat: no-repeat;
   display: flex;
@@ -14,7 +14,7 @@ body {
   width: 100%;
   padding: 0;
   margin: 0;
-}
+}*/
 /*.nav-section {
   display: flex;
   flex-direction: row;
