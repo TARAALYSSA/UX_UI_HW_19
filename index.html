@@ -64,15 +64,14 @@
                 <h5>Message<span>*</span></h5>
                 <textarea name="Message" id="message" cols="0" rows="4" placeholder="Type your message here"></textarea>
                 <!--<input type="submit" value="Submit" required/>-->  
-                <div><button class="Submitbutton" type="button">SUBMIT</button>
+                <div><button id="submitButton" type="button">SUBMIT</button>
         </div>
              </form> 
           </div>
       </div>
-        
+
       <div class="right-container">
         <div class="contact-deets"><h3>Contact Details</h3></div> 
-
         <div class="row center">
         <img class="smallImage" src="./images/letter icon.png"alt="">
         <div class="column">
@@ -107,7 +106,20 @@
     </div>
   </section>
         </div>
+ <!-- This is where I am building my modal -->
+      <!-- <button id="submitButton">Open Modal</button> -->
 
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Thank you for submitting your message! <br>
+    You will hear from us soon!</p>
+  </div>
+
+</div>
  <div class="footer">
         <div class="top">
             <div class="left">
@@ -135,7 +147,24 @@
     </div>
 
     </footer>
-  </body>
+  
   <script src="js/index.js">
   </script>
+  <script>
+  var modal = document.getElementById("myModal");
+var btn = document.getElementById("submitButton");
+var span = document.getElementsByClassName("close")[0];
+btn.onclick = function () {
+  modal.style.display = "block";
+};
+span.onclick = function () {
+  modal.style.display = "none";
+};
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}; 
+  </script>
+  </body>
 </html>
